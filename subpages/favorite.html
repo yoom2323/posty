@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/favorite.css">
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</head>
+<body class="hidden">
+    <div id="skipNav">
+        <a href="#content">본문내용바로가기</a>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-wrap">
+                <button class="search" aria-label="검색 버튼">
+                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" name="search-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.95 14.95a7 7 0 1 0-9.9-9.9 7 7 0 0 0 9.9 9.9Zm1.414 1.414A9 9 0 1 0 3.636 3.636a9 9 0 0 0 12.728 12.728Z" fill="#000"></path><path d="m14.243 15.657 1.414-1.414 7.07 7.07-1.413 1.415-7.071-7.071Z" fill="#000"></path></svg>
+                </button>
+                <div class="header-title">
+                    관심 상품
+                </div>
+                <div class="cart">
+                    <a href=""><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" name="cart-icon"><path d="M3 22.5h18l-.5-9-.5-7H4l-.5 7-.5 9Z" stroke="#000" stroke-width="2"></path><path d="M16 9.5v-4a4 4 0 1 0-8 0v4" stroke="#000" stroke-width="2"></path></svg></a>
+                </div>
+            </div>
+        </header>
+
+        <nav class="gnb">
+            <ul class="top-tab-list">
+                <li class="top-tab-item on"><a href="">홈</a></li>
+                <li class="top-tab-item"><a href="">베스트</a></li>
+                <li class="top-tab-item"><a href="">JDX</a></li>
+                <li class="top-tab-item"><a href="" class="free">무료반품</a></li>
+                <li class="top-tab-item"><a href="">원더브라</a></li>
+                <li class="top-tab-item"><a href="">골프</a></li>
+                <li class="top-tab-item"><a href="">특가</a></li>
+            </ul>
+        </nav>
+        <nav class="gnb-bottom">
+
+            <a href="../index.html"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" name="bottom-navigation/home-icon-gray"><path d="M3 21.5h18V11l-9-8-9 8v10.5Z" stroke="#868E96" stroke-width="2"></path><path fill="#868E96" d="M11 14h2v7h-2z"></path></svg><span>홈</span></a>
+            <a href="./brand.html"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" name="bottom-navigation/tag-icon-gray"><path d="M15.556 8.571a1.5 1.5 0 1 0 2.122-2.122 1.5 1.5 0 0 0-2.122 2.122Z" fill="#868E96"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M22.627 12.814V1.5H11.314L1 11.814l11.314 11.313 10.313-10.313Zm-2-9.314v8.485L12.315 20.3l-8.486-8.485L12.142 3.5h8.486Z" fill="#868E96"></path></svg><span>브랜드</span></a>
+            <a href="./view.html"><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" name="bottom-navigation/category-icon-gray"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.591 4h-5.09v5.09h5.09V4Zm-7.09-2v9.09h9.09V2h-9.09ZM9.591 14.91h-5.09V20h5.09v-5.09Zm-7.09-2V22h9.09v-9.09h-9.09ZM20.5 4h-5.09v5.09h5.09V4Zm-7.09-2v9.09h9.09V2h-9.09ZM20.5 14.91h-5.09V20h5.09v-5.09Zm-7.09-2V22h9.09v-9.09h-9.09Z" fill="#868E96"></path></svg><span>모아보기</span></a>
+            <a href=""><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" name="bottom-navigation/heart-icon-gray"><path d="m11.343 4.542.657.572.657-.572 1.352-1.178A5.553 5.553 0 0 1 16.95 2.5C19.79 2.5 22 4.706 22 7.52c0 1.74-.777 3.396-2.35 5.313-1.586 1.93-3.872 3.998-6.725 6.577v.001l-.923.829-.926-.84h-.001c-2.848-2.57-5.137-4.667-6.722-6.61C2.773 10.857 2 9.2 2 7.52 2 4.707 4.21 2.5 7.05 2.5c1.043 0 2.068.314 2.941.864l1.352 1.178Z" stroke="#868E96" stroke-width="2"></path></svg><span>관심상품</span></a>
+            <a href="./mypage.html"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" name="bottom-navigation/profile-icon-gray"><circle cx="11.9" cy="6.5" r="4.5" stroke="#868E96" stroke-width="2"></circle><path d="M21.8 23v-2.8a6 6 0 0 0-6-6H8a6 6 0 0 0-6 6V23" stroke="#868E96" stroke-width="2"></path></svg><span>마이페이지</span></a>
+
+        </nav>
+
+        <main class="container">
+            <section class="sc-pick">
+                <p>찜한 상품이 없어요</p>
+                <span>마음에 드는 상품을 찜해보시겠어요?</span>
+                <a href="" class="shopping-btn">
+                    쇼핑 하러가기
+                </a>
+            </section>
+            <section class="sc-banner">
+                <img src="https://posty.kr/emptystate_banner.png" alt="무료배송">
+            </section>
+            <section class="sc-recent-product">
+                <h2>최근 본 상품</h2>
+                <div class="product-container">
+                    <ul class="product-list">
+                        <li class="product-item">
+                            <div class="thumb">
+                                <img src="https://cf.product-image.s.zigzag.kr/original/d/2023/7/28/12926_202307281434060872_71060.jpeg?width=1080&height=1080&quality=80&format=jpeg" alt="">
+                                <button class="like-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M10.9855 20.5466L10.9846 20.5458C8.26595 18.0507 6.06979 16.0333 4.54429 14.1455C3.02764 12.2686 2.25 10.6097 2.25 8.84469C2.25 5.97737 4.46367 3.75 7.275 3.75C8.87153 3.75 10.4181 4.50588 11.4261 5.70385L12 6.3859L12.5739 5.70385C13.5819 4.50588 15.1285 3.75 16.725 3.75C19.5363 3.75 21.75 5.97737 21.75 8.84469C21.75 10.6097 20.9724 12.2686 19.4556 14.1468C17.9301 16.0358 15.7342 18.0554 13.0158 20.555C13.0155 20.5552 13.0152 20.5555 13.0149 20.5558L12.0017 21.4822L10.9855 20.5466Z" fill="black" fill-opacity="0.3" stroke="white" stroke-width="1.5"></path></svg>
+                                </button>
+                            </div>
+                            <div class="textbox">
+                                <p class="shopname">미르바네스</p>
+                                <p class="shop-title">미르바네스 프렌치린넨100 세미A라인 원피스</p>
+                                <span class="dc-rate">63%</span>
+                                <span class="price">28,900</span>
+                            
+                            </div>
+                        </li>
+                        <li class="product-item">
+                            <div class="thumb">
+                                <img src="https://cf.product-image.s.zigzag.kr/original/d/2023/7/18/14001_202307181833160639_99871.jpeg?width=1080&height=1080&quality=80&format=jpeg" alt="">
+                                <button class="like-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M10.9855 20.5466L10.9846 20.5458C8.26595 18.0507 6.06979 16.0333 4.54429 14.1455C3.02764 12.2686 2.25 10.6097 2.25 8.84469C2.25 5.97737 4.46367 3.75 7.275 3.75C8.87153 3.75 10.4181 4.50588 11.4261 5.70385L12 6.3859L12.5739 5.70385C13.5819 4.50588 15.1285 3.75 16.725 3.75C19.5363 3.75 21.75 5.97737 21.75 8.84469C21.75 10.6097 20.9724 12.2686 19.4556 14.1468C17.9301 16.0358 15.7342 18.0554 13.0158 20.555C13.0155 20.5552 13.0152 20.5555 13.0149 20.5558L12.0017 21.4822L10.9855 20.5466Z" fill="black" fill-opacity="0.3" stroke="white" stroke-width="1.5"></path></svg>
+                                </button>
+                            </div>
+                            <div class="textbox">
+                                <p class="shopname">헤레이스</p>
+                                <p class="shop-title">(빠른배송)벨라 블라우스 반바지 셋업</p>
+                                <p class="coupon">쿠폰할인가</p>
+                                <span class="dc-rate">85%</span>
+                                <span class="price">39,900</span>
+                                <div class="review">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.99545 4.78691L13.3889 5.44291L10.2608 8.60532L11.045 13L6.94444 10.9749L2.84393 13L3.62811 8.60532L0.5 5.44291L4.89344 4.78691L6.94444 1L8.99545 4.78691Z" fill="#F5C244"></path><path d="M8.99545 4.78691L13.3889 5.44291L10.2608 8.60532L11.045 13L6.94444 10.9749L2.84393 13L3.62811 8.60532L0.5 5.44291L4.89344 4.78691L6.94444 1L8.99545 4.78691Z" fill="#F5C244"></path></svg>
+                                    <span class="review-rating">4.5</span>
+                                    <span class="review-count">(15)</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="kakaostyle">
+                <button class="kakao-info">
+                    <h2>(주)카카오스타일 사업자정보</h2>
+                    <svg width="16" height="8" fill="none" xmlns="http://www.w3.org/2000/svg" name="chevron-down-icon-medium" class="CompanyInfo_icon__rRTBL"><path d="M14.061 1.5 13.001.44l-5 5-5-5L1.94 1.5 8 7.562l6.061-6.06Z" fill="currentColor"></path></svg>
+                </button>
+                <p class="kakao-sub">
+                    대표: 서정훈 <br>
+                    주소: 서울시 강남구 테헤란로 521, 27층 (삼성동, 파르나스타워) <br>
+                    사업자등록번호: 214-88-91525 [사업자 정보 조회]
+                    통신판매업 신고: 서울-강남-03345 <br>
+                    호스팅서비스사업자: (주)카카오스타일 <br>
+                    이메일: support@posty.kr <br>
+                    고객센터: 1670-8052 <br>
+                </p>
+            </div>
+            <div class="private-info">
+                <h2><b>개인정보처리방침</b> · 이용약관</h2>
+                <p>(주)카카오스타일은 통신판매중개자로서 통신판매의 당사자가 아닙니다. 따라서, 등록된 상품, 거래정보 및 거래에 대하여 (주)카카오스타일은 어떠한 책임도 지지 않습니다.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

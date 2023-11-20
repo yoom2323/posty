@@ -1,0 +1,140 @@
+
+.gnb {
+    display: none;
+}
+.header-wrap {
+    flex-direction: row-reverse;
+}
+.header-wrap .cart {
+    width: 24px;
+    justify-content: start;
+    margin-left: 0;
+}
+.header-wrap .header-title {
+    color: #000;
+    font-size: 18px;
+    font-family: var(--font-ps);
+    text-align: center;
+    margin: 0 auto;
+}
+.header-wrap .search {
+    opacity: 0;
+    cursor: default;
+}
+
+.container {
+    padding: 48px 0 0;
+    overflow: hidden;
+}
+
+.sc-login {}
+.sc-login .login-join{
+    padding: 24px 16px;
+    display: block;
+}
+.sc-login .login-join p{
+    font-size: 18px;
+    color: #536dfe;
+    font-family: var(--font-ps);
+}
+.sc-login .login-join span{
+    font-family: var(--font-pm);
+    font-size: 14px;
+    color: #868e96;
+    margin-top: 6px;
+    display: block;
+}
+.join-banner {
+    position: relative;
+}
+.join-banner .join-banner-list{
+}
+.join-banner .join-banner-item{}
+.join-banner .join-banner-item a{
+    margin: 0 auto;
+    width: 448px;
+    height: 94px;
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.join-banner .join-banner-item a img{
+    width: 100%;
+    object-fit: cover;
+}
+.join-banner .pagination {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    display: block;
+    width: 40px;
+    height: 22px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px;
+    border-radius: 50px;
+}
+.join-banner .pagination .fraction{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    width: auto;
+}
+.fraction .swiper-pagination-current {
+    font-weight: 700;
+    color: #fff;
+}
+
+.container h2 {
+    font-family: var(--font-ps);
+    font-size: 18px;
+    padding: 18px 16px;
+}
+.recent-view {}
+.recent-view a{
+    display: block;
+    padding: 21px 16px;
+    display: flex;
+    justify-content: space-between;
+    color: #495057;
+    font-size: 16px;
+}
+.recent-view a p{}
+.container svg path{
+    fill: rgb(206, 212, 218);
+}
+.recent-view .thumb-list{
+    display: flex;
+    gap: 10px;
+    margin: 0 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eee;
+}
+.recent-view .thumb-item{}
+.recent-view .thumb{
+    width: 80px;
+    height: 80px;
+}
+.recent-view .thumb img{}
+
+.sc-cs{}
+.sc-cs .cs-list{}
+.sc-cs .cs-item{}
+.sc-cs .cs-item a{
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 16px;
+    align-items: center;
+}
+.sc-cs .cs-item a p{
+    font-size: 16px;
+    color: #495057;
+}
+.sc-cs .cs-item a span{
+    display: block;
+    font-size: 14px;
+    color: #adb5bd;
+    margin: 6px 0 0;
+}

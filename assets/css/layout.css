@@ -1,0 +1,110 @@
+
+@import './font.css';
+@import './reset.css';
+@import './common.css';
+
+#skipNav{ position: absolute; }
+#skipNav a{ position: absolute; display: flex; align-items: center; justify-content: center; top: 0;left: 0; width: 150px; height: 50px; background: #000; color: #fff; transform: translateY(-100%); }
+#skipNav a:focus, #skipNav a:active{ transform: translateY(0); }
+
+
+.header-wrap{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 10px;
+    padding: 0 16px;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    color: #fff;
+    height: 48px;
+    max-width: 1025px;
+    width: 100%;
+
+}
+.header-wrap {
+    background: #fff;
+}
+.header .cart{
+    margin-left: auto;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.header .logo {
+    width: 62px;
+    height: 32px;
+}
+
+.header .search-area {
+    flex: 1;
+}
+.header .search-area form{
+    padding: 4px 0;
+}
+.header .search-area form fieldset{
+    display: flex;
+    height: 40px;
+    padding: 0 12px;
+    border: 0;
+    align-items: center;
+    background: #f5f6f8;
+    border-radius: 5px;
+}
+.header .search-area form input{
+    border:0;
+    font-size: 16px;
+    background: #f5f6f8;
+    margin-left: 5px;
+}
+.header .search-area form input:focus {
+    outline: none;
+}
+
+
+footer {
+    padding: 20px 16px 68px;
+    font-size: 13px;
+}
+footer .kakaostyle{}
+footer .kakaostyle .kakao-info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    transform: .3s;
+    font-family: var(--font-ps);
+}
+footer .kakaostyle .kakao-info.on svg{
+    transform: rotate(180deg);
+}
+footer .kakaostyle .kakao-info h2{
+    padding: 12px 0;
+}
+footer .kakaostyle .kakao-sub{
+    display: none;
+    font-size: 12px;
+    color: #5e666e;
+    line-height: 15px;
+    margin-bottom: 12px;
+}
+footer .private-info{}
+footer .private-info::before{
+    content: '';
+    display: block;
+    border-top: 1px solid #eee;
+}
+footer .private-info h2{
+    font-family: var(--font-ps);
+    color: #5e666e;
+    padding: 12px 0;
+}
+footer .private-info p{
+    font-size: 12px;
+    color: #5e666e;
+    line-height: 15px;
+
+}
+
+/* mypage */

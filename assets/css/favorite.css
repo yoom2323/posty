@@ -1,0 +1,95 @@
+footer {
+    display: none;
+}
+.gnb {
+    display: none;
+}
+.header-wrap {
+    max-width: 1025px;
+    justify-content: space-between;
+}
+.header-wrap .header-title {
+    color: #000;
+    font-size: 18px;
+    font-family: var(--font-ps);
+    text-align: center;
+}
+.header-wrap .cart {
+    width: 24px;
+    justify-content: start;
+    margin-left: 0;
+}
+.container {
+    padding: 50px 0;
+}
+.sc-pick {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.sc-pick p{
+    font-size: 18px;
+    font-family: var(--font-ps);
+}
+.sc-pick span{
+    font-size: 15px;
+    color: #adb5bd;
+    margin: 15px 0 20px;
+}
+.sc-pick .shopping-btn{
+    display: block;
+    width: 160px;
+    height: 48px;
+    color: #fff;
+    background: #000;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-ps);
+}
+.sc-banner::after {
+    content: '';
+    display: block;
+    background: #f5f6f8;
+    height: 12px;
+}
+
+.sc-recent-product {}
+.sc-recent-product h2{
+    padding: 19px 16px 17px;
+    font-size: 20px;
+    font-family: var(--font-ps);
+}
+.sc-recent-product .product-container {
+    margin: 0 16px 48px;
+}
+.sc-recent-product .product-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.sc-recent-product .product-item{
+    width: 219px;
+    display: flex;
+    flex-direction: column;
+}
+.sc-recent-product .product-item .thumb{
+    position: relative;
+}
+.sc-recent-product .product-item .like-btn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.sc-recent-product .product-item .like-btn.on svg path{
+    fill: #E4503c;
+    fill-opacity: 1;
+    stroke: #E4503c;
+}
+.sc-recent-product .product-item .textbox{}
+.sc-recent-product .product-item .textbox .shop-title {
+    width: 210px;
+}

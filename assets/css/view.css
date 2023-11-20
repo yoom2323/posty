@@ -1,0 +1,191 @@
+footer {
+    display: none;
+}
+.gnb {
+    display: none;
+}
+.header-wrap {
+
+}
+.header-wrap .logo{
+    display: none;
+}
+.header-wrap .search-area {}
+.header .search-area form fieldset {
+    width: 100%;
+}
+.container {
+    padding: 50px 0;
+}
+
+h2 {
+    font-family: var(--font-ps);
+    font-size: 20px;
+}
+.sc-theme {}
+.sc-theme h2{
+    padding: 27px 16px 0;
+}
+.sc-theme .theme-grid{
+    padding: 16px 16px 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.sc-theme .theme-grid .thumb{
+    width: 218px;
+    height: 110px;
+    border-radius: 8px;
+    position: relative;
+}
+.sc-theme .theme-grid .thumb p{
+    font-family: var(--font-ps);
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+.sc-theme .theme-grid .golf{
+    background-image: url(https://cf.image-farm.s.alpha.zigzag.kr/original/category/2023/7/24/202307241838010120_78386.jpeg); 
+    background-size: cover; 
+    background-position: center center;
+}
+.sc-theme .theme-grid .luxury{
+    background-image: url(https://cf.image-farm.s.alpha.zigzag.kr/original/category/2023/7/26/202307261816130077_54862.jpeg); 
+    background-size: cover; 
+    background-position: center center;
+}
+.sc-theme .theme-grid .beauty{
+    background-image: url(https://cf.image-farm.s.alpha.zigzag.kr/original/category/2023/7/24/202307241837120628_30067.jpeg); 
+    background-size: cover; 
+    background-position: center center;
+}
+.sc-theme .theme-grid .mans{
+    background-image: url(https://cf.image-farm.s.alpha.zigzag.kr/original/category/2023/7/24/202307241837450744_12225.jpeg); 
+    background-size: cover; 
+    background-position: center center;
+}
+
+.sc-goods {
+    padding: 0 16px;
+}
+.sc-goods h2 {
+    padding: 27px 0;
+}
+.sc-goods .goods-wrapper{
+    padding: 8px 10px;
+}
+.sc-goods  .goods-list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+.sc-goods .goods-item{
+
+}
+.sc-goods .goods{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sc-goods .goods-container{
+
+}
+.sc-goods .goods-container .goods-img-container{
+    width: 56px;
+    height: 56px;
+    background: #f5f6f8;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sc-goods .goods-container .goods-img-container img{}
+.sc-goods .category-text{
+    text-align: center;
+    width: 56px;
+    margin-top: 6px;
+    font-size: 14px;
+    font-family: var(--font-pm);
+}
+.sc-goods .goods-btn {
+    padding: 16px 14px 32px 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.sc-goods .goods-btn a {
+    display: block;
+    width: 192px;
+    height: 42px;
+    background: #f5f6f8;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.sc-goods .goods-btn a svg{}
+.sc-goods .goods-btn a span{
+    font-family: var(--font-pm);
+    font-size: 16px;
+}
+.sc-sale {
+    padding: 12px 0 56px;
+}
+.sc-sale::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 12px;
+    background: #f5f6f8;
+}
+.sc-sale h2 {
+    padding: 27px 16px 17px;
+}
+.sc-sale .sale-container {
+    padding: 0 16px;
+}
+.sc-sale .sale-list {
+    padding: 10px 0 22.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sc-sale .sale-item a{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.sc-sale .sale-item .thumb {
+    width: 88px;
+    height: 88px;
+}
+.sc-sale .sale-item .thumb img {}
+.sc-sale .sale-item .textbox {
+    font-family: var(--font-ps);
+    margin: 0;
+}
+.sc-sale .sale-item .textbox span {
+    margin: 10px 0;
+    display: block;
+    font-size: 14px;
+    color: #868e96;
+}
+.sc-sale .sale-item .textbox p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.sc-sale .view-all {
+    display: block;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-ps);
+}

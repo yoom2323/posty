@@ -1,0 +1,28 @@
+:root {
+    --font-pt: 'Pretendard', sans-serif;
+    --font-ps: 'Pretendard SemiBold', sans-serif;
+    --font-pm: 'Pretendard Medium', sans-serif;
+    --font-pb: 'Pretendard Bold', sans-serif;
+    --font-pr: 'Pretendard Regular', sans-serif;
+}
+
+*{margin:0;padding:0;font:inherit;color:inherit;}
+*, :after, :before {box-sizing:border-box;flex-shrink:0;}
+html, body {height:100%; line-height: 1;}
+img, picture, video, canvas, svg {display: block;max-width:100%;}
+button {background:none;border:0;cursor:pointer;}
+a {text-decoration:none}
+table {border-collapse:collapse;border-spacing:0}
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: var(--font-pt);
+    color: #212529;
+    font-size: 15px;
+
+    overscroll-behavior: none;
+    scroll-behavior:smooth;
+
+}

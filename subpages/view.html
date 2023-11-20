@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/view.css">
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</head>
+<body class="hidden">
+    <div id="skipNav">
+        <a href="#content">본문내용바로가기</a>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-wrap">
+                <h1 class="logo"><a href="" class="blind">posty
+                </a>
+                <a href=""><img src="https://posty.kr/header-logo.png" alt=""></a>
+                </h1>
+                <div class="search-area">
+                    <form action="" method="get">
+                        <fieldset>
+                            <legend class="blind">
+                                검색
+                            </legend>
+                            <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" name="search-icon-gray" class="SearchBar_search_icon__WDekT"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.458 12.458a5.833 5.833 0 1 0-8.25-8.25 5.833 5.833 0 0 0 8.25 8.25Zm1.179 1.179A7.5 7.5 0 1 0 3.03 3.03a7.5 7.5 0 0 0 10.607 10.607Z" fill="#868E96"></path><path d="m11.869 13.047 1.178-1.178 5.893 5.892-1.178 1.179-5.893-5.893Z" fill="#868E96"></path></svg>
+                            <input type="text" placeholder="브랜드와 상품을 검색해보세요">
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="cart">
+                    <a href=""><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" name="cart-icon"><path d="M3 22.5h18l-.5-9-.5-7H4l-.5 7-.5 9Z" stroke="#000" stroke-width="2"></path><path d="M16 9.5v-4a4 4 0 1 0-8 0v4" stroke="#000" stroke-width="2"></path></svg></a>
+                </div>
+            </div>
+        </header>
+
+        <nav class="gnb">
+            <ul class="top-tab-list">
+                <li class="top-tab-item on"><a href="">홈</a></li>
+                <li class="top-tab-item"><a href="">베스트</a></li>
+                <li class="top-tab-item"><a href="">JDX</a></li>
+                <li class="top-tab-item"><a href="" class="free">무료반품</a></li>
+                <li class="top-tab-item"><a href="">원더브라</a></li>
+                <li class="top-tab-item"><a href="">골프</a></li>
+                <li class="top-tab-item"><a href="">특가</a></li>
+            </ul>
+        </nav>
+        <nav class="gnb-bottom">
+
+            <a href="../index.html"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" name="bottom-navigation/home-icon-gray"><path d="M3 21.5h18V11l-9-8-9 8v10.5Z" stroke="#868E96" stroke-width="2"></path><path fill="#868E96" d="M11 14h2v7h-2z"></path></svg><span>홈</span></a>
+            <a href="./brand.html"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" name="bottom-navigation/tag-icon-gray"><path d="M15.556 8.571a1.5 1.5 0 1 0 2.122-2.122 1.5 1.5 0 0 0-2.122 2.122Z" fill="#868E96"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M22.627 12.814V1.5H11.314L1 11.814l11.314 11.313 10.313-10.313Zm-2-9.314v8.485L12.315 20.3l-8.486-8.485L12.142 3.5h8.486Z" fill="#868E96"></path></svg><span>브랜드</span></a>
+            <a href=""><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" name="bottom-navigation/category-icon-gray"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.591 4h-5.09v5.09h5.09V4Zm-7.09-2v9.09h9.09V2h-9.09ZM9.591 14.91h-5.09V20h5.09v-5.09Zm-7.09-2V22h9.09v-9.09h-9.09ZM20.5 4h-5.09v5.09h5.09V4Zm-7.09-2v9.09h9.09V2h-9.09ZM20.5 14.91h-5.09V20h5.09v-5.09Zm-7.09-2V22h9.09v-9.09h-9.09Z" fill="#868E96"></path></svg><span>모아보기</span></a>
+            <a href="./favorite.html"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" name="bottom-navigation/heart-icon-gray"><path d="m11.343 4.542.657.572.657-.572 1.352-1.178A5.553 5.553 0 0 1 16.95 2.5C19.79 2.5 22 4.706 22 7.52c0 1.74-.777 3.396-2.35 5.313-1.586 1.93-3.872 3.998-6.725 6.577v.001l-.923.829-.926-.84h-.001c-2.848-2.57-5.137-4.667-6.722-6.61C2.773 10.857 2 9.2 2 7.52 2 4.707 4.21 2.5 7.05 2.5c1.043 0 2.068.314 2.941.864l1.352 1.178Z" stroke="#868E96" stroke-width="2"></path></svg><span>관심상품</span></a>
+            <a href="./mypage.html"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" name="bottom-navigation/profile-icon-gray"><circle cx="11.9" cy="6.5" r="4.5" stroke="#868E96" stroke-width="2"></circle><path d="M21.8 23v-2.8a6 6 0 0 0-6-6H8a6 6 0 0 0-6 6V23" stroke="#868E96" stroke-width="2"></path></svg><span>마이페이지</span></a>
+
+        </nav>
+
+        <main class="container">
+            <section class="sc-theme">
+                <h2>인기 테마 모아보기</h2>
+                <div class="theme-grid">
+                    <a href="" class="thumb golf">
+                        <p>골프</p>
+                    </a>
+                    <a href="" class="thumb luxury">
+                        <p>럭셔리</p>
+                    </a>
+                    <a href="" class="thumb beauty">
+                        <p>뷰티</p>
+                    </a>
+                    <a href="" class="thumb mans">
+                        <p>남성</p>
+                    </a>
+                </div>
+            </section>
+            <section class="sc-goods">
+                <h2>상품 카테고리</h2>
+                <div class="goods-wrapper">
+                    <ul class="goods-list">
+                        <li class="category-item">
+                            <a href="" class="goods">
+                                <div class="goods-container">
+                                    <div class="goods-img-container">
+                                        <img src="https://cf.zibet.s.zigzag.kr/zibet-category/20220831/Onepiece.svg" alt="원피스">
+                                    </div>
+                                </div>
+                                <div class="category-text">
+                                    원피스
+                                </div>
+                            </a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="goods">
+                                <div class="goods-container">
+                                    <div class="goods-img-container">
+                                        <img src="https://cf.zibet.s.zigzag.kr/zibet-category/20220831/T-shirt.svg" alt="상의">
+                                    </div>
+                                </div>
+                                <div class="category-text">
+                                    상의
+                                </div>
+                            </a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="goods">
+                                <div class="goods-container">
+                                    <div class="goods-img-container">
+                                        <img src="https://cf.zibet.s.zigzag.kr/zibet-category/20220831/Shoes.svg" alt="슈즈">
+                                    </div>
+                                </div>
+                                <div class="category-text">
+                                    슈즈
+                                </div>
+                            </a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="goods">
+                                <div class="goods-container">
+                                    <div class="goods-img-container">
+                                        <img src="https://cf.zibet.s.zigzag.kr/zibet-category/20221207/golf.svg" alt="골프">
+                                    </div>
+                                </div>
+                                <div class="category-text">
+                                    골프
+                                </div>
+                            </a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="goods">
+                                <div class="goods-container">
+                                    <div class="goods-img-container">
+                                        <img src="https://cf.zibet.s.zigzag.kr/zibet-category/20220831/Outdoor.svg" alt="아웃도어">
+                                    </div>
+                                </div>
+                                <div class="category-text">
+                                    아웃도어
+                                </div>
+                            </a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="goods">
+                                <div class="goods-container">
+                                    <div class="goods-img-container">
+                                        <img src="https://cf.zibet.s.zigzag.kr/zibet-category/20220831/Pants.svg" alt="바지">
+                                    </div>
+                                </div>
+                                <div class="category-text">
+                                    바지
+                                </div>
+                            </a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="goods">
+                                <div class="goods-container">
+                                    <div class="goods-img-container">
+                                        <img src="https://cf.zibet.s.zigzag.kr/zibet-category/20220831/Skirt.svg" alt="스커트">
+                                    </div>
+                                </div>
+                                <div class="category-text">
+                                    스커트
+                                </div>
+                            </a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="goods">
+                                <div class="goods-container">
+                                    <div class="goods-img-container">
+                                        <img src="https://cf.zibet.s.zigzag.kr/zibet-category/20220831/Underwear.svg" alt="이너웨어">
+                                    </div>
+                                </div>
+                                <div class="category-text">
+                                    이너웨어
+                                </div>
+                            </a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="goods">
+                                <div class="goods-container">
+                                    <div class="goods-img-container">
+                                        <img src="https://cf.zibet.s.zigzag.kr/zibet-category/20220831/Sports.svg" alt="스포츠">
+                                    </div>
+                                </div>
+                                <div class="category-text">
+                                    스포츠
+                                </div>
+                            </a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="goods">
+                                <div class="goods-container">
+                                    <div class="goods-img-container">
+                                        <img src="https://cf.zibet.s.zigzag.kr/zibet-category/20220831/Jewelry.svg" alt="주얼리">
+                                    </div>
+                                </div>
+                                <div class="category-text">
+                                    주얼리
+                                </div>
+                            </a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="goods">
+                                <div class="goods-container">
+                                    <div class="goods-img-container">
+                                        <img src="https://cf.zibet.s.zigzag.kr/zibet-category/20221207/beauty.svg" alt="뷰티">
+                                    </div>
+                                </div>
+                                <div class="category-text">
+                                    뷰티
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="goods-btn">
+                    <a href="">
+                        <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" name="best-icon"><g clip-path="url(#best-icon_svg__a)"><path d="M10 .058c5.482 0 9.941 4.46 9.941 9.941 0 5.482-4.46 9.941-9.94 9.941C4.518 19.94.058 15.48.058 10 .06 4.517 4.518.057 10 .057Zm0 18.956c4.97 0 9.014-4.043 9.014-9.013S14.97.986 10 .986.987 5.03.987 10 5.03 19.012 10 19.012v.002Z" fill="#4B4D4F"></path><path d="M10 20c5.514 0 10-4.487 10-10 0-5.514-4.486-10-10-10C4.488 0 .002 4.486.002 10c0 5.513 4.486 9.999 10 9.999V20ZM10 .117c5.45 0 9.883 4.433 9.883 9.882 0 5.45-4.433 9.883-9.882 9.883C4.55 19.882.118 15.45.118 10 .118 4.55 4.55.117 10 .117Zm0 18.955c5.003 0 9.072-4.07 9.072-9.071 0-5.002-4.07-9.073-9.071-9.073C4.999.928.929 4.998.929 9.999c0 5.002 4.07 9.072 9.072 9.072v.001Zm0-18.027c4.938 0 8.955 4.017 8.955 8.954 0 4.938-4.017 8.955-8.954 8.955-4.938 0-8.955-4.017-8.955-8.955 0-4.937 4.016-8.954 8.955-8.954Z" fill="#4B4D4F"></path><path d="M4.27 7.987c.149-.406.483-.673.892-.71h.005l2.563-.289a.314.314 0 0 0 .25-.182l1.054-2.335c.162-.379.541-.621.969-.621.427 0 .784.233.97.624l1.054 2.332c.045.1.14.17.25.182l2.563.29c.425.056.77.336.896.73.13.405.019.824-.294 1.119l-1.9 1.734a.311.311 0 0 0-.096.293l.517 2.522c.09.416-.068.82-.423 1.081a1.008 1.008 0 0 1-1.147.055l-2.233-1.303a.31.31 0 0 0-.313 0l-2.231 1.28a1.11 1.11 0 0 1-.53.148c-.216 0-.438-.072-.623-.203-.341-.251-.494-.647-.418-1.083l.516-2.517a.31.31 0 0 0-.096-.293L4.563 9.104a1.06 1.06 0 0 1-.291-1.117H4.27Zm2.975 2.27c.228.212.34.56.285.886l-.47 2.294a.313.313 0 0 0 .462.334l2.036-1.169c.165-.081.324-.126.467-.126.176 0 .33.041.46.123l2.042 1.172a.313.313 0 0 0 .463-.334l-.472-2.3a.91.91 0 0 1 .288-.88l1.735-1.583a.313.313 0 0 0-.175-.542l-2.34-.264a.921.921 0 0 1-.734-.534l-1.002-2.14a.313.313 0 0 0-.569.005l-.964 2.155a.89.89 0 0 1-.733.536l-2.338.264a.312.312 0 0 0-.174.543l1.733 1.563v-.002Z" fill="#4B4D4F"></path><path d="M12.929 15.024c.225 0 .448-.074.647-.22a1.1 1.1 0 0 0 .444-1.14l-.517-2.521a.253.253 0 0 1 .079-.238l1.9-1.735c.33-.311.446-.751.31-1.178a1.129 1.129 0 0 0-.944-.772l-2.565-.29a.255.255 0 0 1-.203-.148L11.028 4.45a1.116 1.116 0 0 0-1.024-.658c-.445 0-.852.258-1.022.656L7.928 6.782a.255.255 0 0 1-.204.149l-2.563.29c-.436.038-.788.317-.944.747v.003c-.137.427-.022.867.307 1.176l1.903 1.737c.065.06.095.152.078.238l-.516 2.517c-.08.46.08.876.44 1.141.197.138.43.214.658.214.183 0 .377-.054.56-.154l2.23-1.282a.257.257 0 0 1 .255 0l2.233 1.303c.18.108.374.162.565.162l-.001.001ZM10.003 3.908c.398 0 .741.22.918.59l1.052 2.331c.054.12.167.2.296.216l2.564.29a1.01 1.01 0 0 1 .568 1.75l-1.899 1.733a.373.373 0 0 0-.113.348l.517 2.523a.984.984 0 0 1-.4 1.021.952.952 0 0 1-1.082.051L10.19 13.46a.37.37 0 0 0-.372-.001l-2.231 1.28a1.042 1.042 0 0 1-.502.139c-.204 0-.413-.068-.59-.192-.323-.237-.467-.611-.394-1.026l.516-2.515a.373.373 0 0 0-.113-.348L4.602 9.06a1.005 1.005 0 0 1-.276-1.056c.14-.386.455-.636.841-.67l2.57-.289a.373.373 0 0 0 .296-.216l1.054-2.336a.987.987 0 0 1 .916-.587v.002Zm2.68 9.962a.366.366 0 0 0 .217-.072.364.364 0 0 0 .146-.374l-.472-2.3a.853.853 0 0 1 .271-.825l1.734-1.584a.368.368 0 0 0 .103-.388.367.367 0 0 0-.312-.255l-2.34-.264a.86.86 0 0 1-.685-.5l-1.004-2.141a.367.367 0 0 0-.336-.214h-.003a.365.365 0 0 0-.335.22l-.964 2.154a.833.833 0 0 1-.687.502l-2.338.264a.367.367 0 0 0-.311.256.366.366 0 0 0 .105.388L7.204 10.3a.95.95 0 0 1 .268.834l-.469 2.29a.368.368 0 0 0 .146.376c.12.086.274.094.402.02l2.035-1.168c.154-.077.307-.118.438-.118.164 0 .31.039.43.114l2.044 1.173c.059.033.122.05.186.05l-.001-.001Zm-2.677-8.8c.1 0 .188.056.23.146l1.003 2.14a.98.98 0 0 0 .778.568l2.34.264c.101.011.183.078.214.174a.25.25 0 0 1-.07.266l-1.734 1.584a.967.967 0 0 0-.306.936l.471 2.3a.25.25 0 0 1-.1.256.251.251 0 0 1-.275.014l-2.042-1.172a.91.91 0 0 0-.49-.13c-.148 0-.319.045-.493.131l-2.039 1.17a.254.254 0 0 1-.376-.27l.47-2.293a1.065 1.065 0 0 0-.303-.94L5.552 8.65a.25.25 0 0 1-.07-.266.253.253 0 0 1 .213-.175l2.338-.264a.947.947 0 0 0 .78-.572l.962-2.152c.041-.092.13-.15.23-.15h.002V5.07Z" fill="#4B4D4F"></path><path d="M7.242 10.258c.229.211.341.559.286.886l-.47 2.293a.313.313 0 0 0 .462.334l2.036-1.168c.164-.082.324-.126.466-.126.177 0 .33.04.461.122l2.042 1.172a.313.313 0 0 0 .462-.334l-.471-2.3a.91.91 0 0 1 .288-.88l1.734-1.583a.313.313 0 0 0-.175-.542l-2.34-.264a.921.921 0 0 1-.733-.534l-1.003-2.14a.313.313 0 0 0-.568.005l-.964 2.155a.89.89 0 0 1-.733.537l-2.338.263a.312.312 0 0 0-.174.543l1.732 1.563v-.002Z" fill="#7187FE"></path></g><defs><clipPath id="best-icon_svg__a"><path fill="#fff" transform="matrix(-1 0 0 1 20 0)" d="M0 0h20v20H0z"></path></clipPath></defs></svg>
+                        <span>베스트</span>
+                    </a>
+                    <a href="">
+                        <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" name="sale-icon"><g clip-path="url(#sale-icon_svg__a)"><path d="m19.603 8.626-.33-.623-.008-.014a1.383 1.383 0 0 1-.236-.887l.033-.723a2.495 2.495 0 0 0-1.357-2.385l-.664-.33a1.541 1.541 0 0 1-.65-.65l-.333-.663A2.501 2.501 0 0 0 13.672 1l-.737.033a1.348 1.348 0 0 1-.885-.238L11.422.4A2.55 2.55 0 0 0 8.68.399l-.634.399c-.269.178-.59.264-.882.236L6.398.967A2.5 2.5 0 0 0 4.006 2.32l-.332.662a1.541 1.541 0 0 1-.65.648l-.666.332a2.49 2.49 0 0 0-1.355 2.38l.034.735c.028.306-.052.603-.239.882l-.396.626A2.53 2.53 0 0 0 .4 11.32l.4.632c.179.268.265.591.236.887l-.033.755c-.07.984.462 1.92 1.357 2.385l.664.33c.265.133.484.352.65.65l.333.663a2.5 2.5 0 0 0 2.386 1.35l.737-.033a1.35 1.35 0 0 1 .885.238l.626.395c.42.279.888.426 1.358.426a2.4 2.4 0 0 0 1.354-.424l.634-.399c.268-.178.591-.264.889-.235l.725.033a2.504 2.504 0 0 0 2.392-1.353l.331-.662c.133-.264.352-.483.65-.648l.667-.332a2.49 2.49 0 0 0 1.355-2.38l-.033-.735a1.334 1.334 0 0 1 .239-.882l.396-.626a2.538 2.538 0 0 0 .005-2.731l-.001.002Zm-1.556 4.329.033.728a1.504 1.504 0 0 1-.831 1.42l-.668.335c-.461.247-.852.638-1.102 1.1l-.331.662a1.513 1.513 0 0 1-1.427.83l-.726-.034c-.529-.034-1.058.1-1.529.39l-.6.365a1.491 1.491 0 0 1-1.635 0l-.62-.391a2.393 2.393 0 0 0-1.397-.43h-.141l-.73.033a1.51 1.51 0 0 1-1.425-.83l-.335-.665c-.248-.46-.64-.85-1.104-1.099l-.664-.33a1.505 1.505 0 0 1-.831-1.423l.033-.723a2.584 2.584 0 0 0-.396-1.535l-.394-.556a1.48 1.48 0 0 1 0-1.63l.4-.63c.29-.471.425-.997.39-1.522l-.033-.728a1.503 1.503 0 0 1 .831-1.42l.668-.334c.461-.248.852-.638 1.102-1.102l.332-.661a1.515 1.515 0 0 1 1.426-.83l.726.034a2.6 2.6 0 0 0 1.53-.39l.633-.398a1.491 1.491 0 0 1 1.635 0l.631.399c.473.29 1.001.424 1.527.389l.73-.033a1.512 1.512 0 0 1 1.425.829l.334.666c.249.46.64.85 1.105 1.099l.663.33c.535.267.861.825.832 1.422l-.034.724c-.035.527.1 1.056.392 1.527l.397.627c.301.481.288 1.136-.032 1.63l-.4.631c-.291.471-.426.997-.39 1.522v.002Z" fill="#4B4D4F"></path><path d="M7.446 9.386a2.298 2.298 0 0 0 2.298-2.292 2.298 2.298 0 0 0-4.596 0 2.298 2.298 0 0 0 2.298 2.292Zm0-3.605c.696 0 1.283.587 1.283 1.28 0 .694-.588 1.28-1.283 1.28a1.3 1.3 0 0 1-1.283-1.28 1.3 1.3 0 0 1 1.283-1.28ZM12.618 10.556a2.298 2.298 0 0 0-2.298 2.291 2.298 2.298 0 0 0 4.596 0 2.298 2.298 0 0 0-2.298-2.291Zm0 3.604a1.3 1.3 0 0 1-1.283-1.28 1.3 1.3 0 0 1 1.283-1.28 1.3 1.3 0 0 1 1.284 1.28 1.3 1.3 0 0 1-1.284 1.28ZM14.424 5.591a.51.51 0 0 0-.718 0l-8.042 8.02a.506.506 0 1 0 .718.716l8.042-8.019a.506.506 0 0 0 0-.716Z" fill="#4B4D4F"></path><path d="M6.133 7.061c0-.71.6-1.309 1.313-1.309.712 0 1.312.599 1.312 1.309s-.601 1.31-1.312 1.31a1.328 1.328 0 0 1-1.313-1.31ZM12.617 14.19c.726 0 1.313-.586 1.313-1.309s-.587-1.309-1.313-1.309c-.725 0-1.312.586-1.312 1.31 0 .722.588 1.308 1.313 1.308Z" fill="#7187FE"></path></g><defs><clipPath id="sale-icon_svg__a"><path fill="#fff" d="M0 0h20v20H0z"></path></clipPath></defs></svg>
+                        <span>세일</span>
+                    </a>
+                </div>
+            </section>
+            <section class="sc-sale">
+                <h2>지금 뜨는 기획전</h2>
+                <div class="sale-container">
+                    <ul class="sale-list">
+                        <li class="sale-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="https://cf.res.s.zigzag.kr/benefit_banner/20230721/13af6645-f0cb-4069-9452-9ce31b00e0b9.jpg" alt="">
+                                </div>
+                                <div class="textbox">
+                                    <span>다운 패딩부터 무스탕까지 최대 할인</span>
+                                    <p>겨울 헤비아우터 역시즌 세일</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="sale-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="https://cf.res.s.zigzag.kr/benefit_banner/20230726/abbcbd4c-6fad-4004-834a-cc6ae3cc1721.jpg" alt="">
+                                </div>
+                                <div class="textbox">
+                                    <span>푸마 언더웨어 무료반품 WEEK</span>
+                                    <p>주말특가</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="sale-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="https://cf.res.s.zigzag.kr/benefit_banner/20230728/55ec2e92-1e58-406d-b8d8-ccddeb2ae491.jpg" alt="">
+                                </div>
+                                <div class="textbox">
+                                    <span>인기 언더웨어 단 하루 30% 파격 쿠폰</span>
+                                    <p>브랜드👉콕 감탄브라,원더브라 최저가</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="" class="view-all">
+                        모두 보기
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="kakaostyle">
+                <button class="kakao-info">
+                    <h2>(주)카카오스타일 사업자정보</h2>
+                    <svg width="16" height="8" fill="none" xmlns="http://www.w3.org/2000/svg" name="chevron-down-icon-medium" class="CompanyInfo_icon__rRTBL"><path d="M14.061 1.5 13.001.44l-5 5-5-5L1.94 1.5 8 7.562l6.061-6.06Z" fill="currentColor"></path></svg>
+                </button>
+                <p class="kakao-sub">
+                    대표: 서정훈 <br>
+                    주소: 서울시 강남구 테헤란로 521, 27층 (삼성동, 파르나스타워) <br>
+                    사업자등록번호: 214-88-91525 [사업자 정보 조회]
+                    통신판매업 신고: 서울-강남-03345 <br>
+                    호스팅서비스사업자: (주)카카오스타일 <br>
+                    이메일: support@posty.kr <br>
+                    고객센터: 1670-8052 <br>
+                </p>
+            </div>
+            <div class="private-info">
+                <h2><b>개인정보처리방침</b> · 이용약관</h2>
+                <p>(주)카카오스타일은 통신판매중개자로서 통신판매의 당사자가 아닙니다. 따라서, 등록된 상품, 거래정보 및 거래에 대하여 (주)카카오스타일은 어떠한 책임도 지지 않습니다.</p>
+            </div>
+        </footer>
+</body>
+</html>

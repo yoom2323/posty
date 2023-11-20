@@ -1,0 +1,742 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</head>
+<body class="hidden ">
+    <div id="skipNav">
+        <a href="#content">본문내용바로가기</a>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-wrap">
+                <h1 class="logo"><a href="" class="blind">posty
+                </a>
+                <a href=""><img src="https://posty.kr/header-logo.png" alt=""></a>
+                </h1>
+                <div class="search-area">
+                    <form action="" method="get">
+                        <fieldset>
+                            <legend class="blind">
+                                검색
+                            </legend>
+                            <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" name="search-icon-gray" class="SearchBar_search_icon__WDekT"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.458 12.458a5.833 5.833 0 1 0-8.25-8.25 5.833 5.833 0 0 0 8.25 8.25Zm1.179 1.179A7.5 7.5 0 1 0 3.03 3.03a7.5 7.5 0 0 0 10.607 10.607Z" fill="#868E96"></path><path d="m11.869 13.047 1.178-1.178 5.893 5.892-1.178 1.179-5.893-5.893Z" fill="#868E96"></path></svg>
+                            <input type="text" placeholder="상품을 검색해보세요">
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="cart">
+                    <a href=""><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" name="cart-icon"><path d="M3 22.5h18l-.5-9-.5-7H4l-.5 7-.5 9Z" stroke="#000" stroke-width="2"></path><path d="M16 9.5v-4a4 4 0 1 0-8 0v4" stroke="#000" stroke-width="2"></path></svg></a>
+                </div>
+            </div>
+        </header>
+
+        <nav class="gnb">
+            <ul class="top-tab-list">
+                <li class="top-tab-item on"><a href="">홈</a></li>
+                <li class="top-tab-item"><a href="">베스트</a></li>
+                <li class="top-tab-item"><a href="">JDX</a></li>
+                <li class="top-tab-item"><a href="" class="free">무료반품</a></li>
+                <li class="top-tab-item"><a href="">원더브라</a></li>
+                <li class="top-tab-item"><a href="">골프</a></li>
+                <li class="top-tab-item"><a href="">특가</a></li>
+            </ul>
+        </nav>
+        <nav class="gnb-bottom">
+
+            <a href=""><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" name="bottom-navigation/home-icon-gray"><path d="M3 21.5h18V11l-9-8-9 8v10.5Z" stroke="#868E96" stroke-width="2"></path><path fill="#868E96" d="M11 14h2v7h-2z"></path></svg><span>홈</span></a>
+            <a href="./subpages/brand.html"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" name="bottom-navigation/tag-icon-gray"><path d="M15.556 8.571a1.5 1.5 0 1 0 2.122-2.122 1.5 1.5 0 0 0-2.122 2.122Z" fill="#868E96"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M22.627 12.814V1.5H11.314L1 11.814l11.314 11.313 10.313-10.313Zm-2-9.314v8.485L12.315 20.3l-8.486-8.485L12.142 3.5h8.486Z" fill="#868E96"></path></svg><span>브랜드</span></a>
+            <a href="./subpages/view.html"><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" name="bottom-navigation/category-icon-gray"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.591 4h-5.09v5.09h5.09V4Zm-7.09-2v9.09h9.09V2h-9.09ZM9.591 14.91h-5.09V20h5.09v-5.09Zm-7.09-2V22h9.09v-9.09h-9.09ZM20.5 4h-5.09v5.09h5.09V4Zm-7.09-2v9.09h9.09V2h-9.09ZM20.5 14.91h-5.09V20h5.09v-5.09Zm-7.09-2V22h9.09v-9.09h-9.09Z" fill="#868E96"></path></svg><span>모아보기</span></a>
+            <a href="./subpages/favorite.html"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" name="bottom-navigation/heart-icon-gray"><path d="m11.343 4.542.657.572.657-.572 1.352-1.178A5.553 5.553 0 0 1 16.95 2.5C19.79 2.5 22 4.706 22 7.52c0 1.74-.777 3.396-2.35 5.313-1.586 1.93-3.872 3.998-6.725 6.577v.001l-.923.829-.926-.84h-.001c-2.848-2.57-5.137-4.667-6.722-6.61C2.773 10.857 2 9.2 2 7.52 2 4.707 4.21 2.5 7.05 2.5c1.043 0 2.068.314 2.941.864l1.352 1.178Z" stroke="#868E96" stroke-width="2"></path></svg><span>관심상품</span></a>
+            <a href="./subpages/mypage.html"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" name="bottom-navigation/profile-icon-gray"><circle cx="11.9" cy="6.5" r="4.5" stroke="#868E96" stroke-width="2"></circle><path d="M21.8 23v-2.8a6 6 0 0 0-6-6H8a6 6 0 0 0-6 6V23" stroke="#868E96" stroke-width="2"></path></svg><span>마이페이지</span></a>
+
+        </nav>
+
+        <main class="container">
+            <div class="group-slide">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="https://cf.res.s.zigzag.kr/benefit_banner/20230721/13af6645-f0cb-4069-9452-9ce31b00e0b9.jpg" alt="">
+                                <div class="text-box">
+                                    <p>겨울 아우터<br>역시즌 특가</p>
+                                    <span>프리미엄 다운 패딩부터 무스탕까지</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="https://cf.res.s.zigzag.kr/benefit_banner/20230724/3e392e9c-1dbb-4943-b88f-c7f3386ce474.jpg" alt="">
+                                <div class="text-box">
+                                    <p>원더브라<br>라이브 앵콜특가</p>
+                                    <span>브라팬티 10종세트<br>단독 최저가 구성으로 만나보세요!</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="https://cf.res.s.zigzag.kr/benefit_banner/20230721/04f576df-0768-4b50-92df-fb6ab76ec17b.jpg" alt="">
+                                <div class="text-box">
+                                    <p>리스트<br>역시즌 특급 할인</p>
+                                    <span>브랜드위크 한정 최대 50%쿠폰<br>단독 가을 선오픈까지</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="https://cf.res.s.zigzag.kr/benefit_banner/20230721/5ae3cd1a-03d6-413f-bb0c-f5f30d8a6188.jpg" alt="">
+                                <div class="text-box">
+                                    <p>헤지스/닥스 GOLF <br>브랜드위크 특가 찬스</p>
+                                    <span>남녀 인기 골프웨어를<br>특가 + 추가쿠폰으로 만나보세요!</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <div class="fraction"><strong>1</strong>/1</div>
+                        <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg" name="overlap" class="PaginationIndicator_view_all__a3U4I"><g opacity="0.6" fill="currentColor"><path d="M.2 1.2a1 1 0 0 1 1-1h5.04a1 1 0 0 1 1 1v5.04a1 1 0 0 1-1 1H1.2a1 1 0 0 1-1-1V1.2Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M7.827 1.374C8.475 1.374 9 1.899 9 2.547v3.66C9 8.087 9 9 6.567 9h-4.02a1.173 1.173 0 0 1-1.173-1.173H6.5c.5 0 1.327-.327 1.327-1.5V1.374Z"></path></g></svg>
+                    </div>
+                </div>
+            </div>
+            <section class="sc-category">
+                <ul class="category-list">
+                    <li class="category-item">
+                        <a href="" class="horizoncategory">
+                            <div class="horizoncategory-container cate-container">
+                                <div class="horizoncategory-icon cate-icon">
+                                    <div class="horizoncategory-new">
+                                        N
+                                    </div>
+                                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" name="category-icon-medium"><path fill="#000" d="M2 2.75h12v1.5H2zM2 7.25h12v1.5H2zM2 11.75h12v1.5H2z"></path></svg>
+                                </div>
+                            </div>
+                            <div class="category-text">
+                                카테고리
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="" class="horizoncategory">
+                            <div class="horizoncategory-container live-container">
+                                <div class="horizoncategory-img-container live-img-container">
+                                    <img src="https://cf.zibet.s.zigzag.kr/shoplive/player_icon.png" alt="라이브">
+                                </div>
+                            </div>
+                            <div class="category-text">
+                                라이브
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="" class="horizoncategory">
+                            <div class="horizoncategory-container">
+                                <div class="horizoncategory-img-container">
+                                    <img src="https://cf.zibet.s.zigzag.kr/zibet-category/20220831/Onepiece.svg" alt="원피스">
+                                </div>
+                            </div>
+                            <div class="category-text">
+                                원피스
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="" class="horizoncategory">
+                            <div class="horizoncategory-container">
+                                <div class="horizoncategory-img-container">
+                                    <img src="https://cf.zibet.s.zigzag.kr/zibet-category/20220831/T-shirt.svg" alt="상의">
+                                </div>
+                            </div>
+                            <div class="category-text">
+                                상의
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="" class="horizoncategory">
+                            <div class="horizoncategory-container">
+                                <div class="horizoncategory-img-container">
+                                    <img src="https://cf.zibet.s.zigzag.kr/zibet-category/20220831/Shoes.svg" alt="슈즈">
+                                </div>
+                            </div>
+                            <div class="category-text">
+                                슈즈
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="" class="horizoncategory">
+                            <div class="horizoncategory-container">
+                                <div class="horizoncategory-img-container">
+                                    <img src="https://cf.zibet.s.zigzag.kr/zibet-category/20221207/golf.svg" alt="골프">
+                                </div>
+                            </div>
+                            <div class="category-text">
+                                골프
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="" class="horizoncategory">
+                            <div class="horizoncategory-container">
+                                <div class="horizoncategory-img-container">
+                                    <img src="https://cf.zibet.s.zigzag.kr/zibet-category/20220831/Outdoor.svg" alt="아웃도어">
+                                </div>
+                            </div>
+                            <div class="category-text">
+                                아웃도어
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="" class="horizoncategory">
+                            <div class="horizoncategory-container">
+                                <div class="horizoncategory-img-container">
+                                    <img src="https://cf.zibet.s.zigzag.kr/zibet-category/20220831/Pants.svg" alt="바지">
+                                </div>
+                            </div>
+                            <div class="category-text">
+                                바지
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="" class="horizoncategory">
+                            <div class="horizoncategory-container">
+                                <div class="horizoncategory-img-container">
+                                    <img src="https://cf.zibet.s.zigzag.kr/zibet-category/20220831/Skirt.svg" alt="스커트">
+                                </div>
+                            </div>
+                            <div class="category-text">
+                                스커트
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="" class="horizoncategory">
+                            <div class="horizoncategory-container">
+                                <div class="horizoncategory-img-container">
+                                    <img src="https://cf.zibet.s.zigzag.kr/zibet-category/20220831/Underwear.svg" alt="이너웨어">
+                                </div>
+                            </div>
+                            <div class="category-text">
+                                이너웨어
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="" class="horizoncategory">
+                            <div class="horizoncategory-container">
+                                <div class="horizoncategory-img-container">
+                                    <img src="https://cf.zibet.s.zigzag.kr/zibet-category/20220831/Sports.svg" alt="스포츠">
+                                </div>
+                            </div>
+                            <div class="category-text">
+                                스포츠
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="" class="horizoncategory">
+                            <div class="horizoncategory-container">
+                                <div class="horizoncategory-img-container">
+                                    <img src="https://cf.zibet.s.zigzag.kr/zibet-category/20220831/Jewelry.svg" alt="주얼리">
+                                </div>
+                            </div>
+                            <div class="category-text">
+                                주얼리
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="" class="horizoncategory">
+                            <div class="horizoncategory-container">
+                                <div class="horizoncategory-img-container">
+                                    <img src="https://cf.zibet.s.zigzag.kr/zibet-category/20221207/beauty.svg" alt="뷰티">
+                                </div>
+                            </div>
+                            <div class="category-text">
+                                뷰티
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </section>
+            <section class="sc-product">
+                <h2>고객님, 이 상품 어떠세요?</h2>
+                <p>포스티는 전상품 무료배송!</p>
+                <div class="product-container">
+                    <ul class="product-list">
+                        <li class="product-item">
+                            <a href="javascript:void(0);" class="wrap-prod">
+                                <div class="thumb">
+                                    <img src="https://cf.product-image.s.zigzag.kr/original/d/2023/6/30/10235_202306301517110190_16702.jpeg?width=576&height=576&quality=80&format=webp" alt="">
+                                    <button class="like-btn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M10.9855 20.5466L10.9846 20.5458C8.26595 18.0507 6.06979 16.0333 4.54429 14.1455C3.02764 12.2686 2.25 10.6097 2.25 8.84469C2.25 5.97737 4.46367 3.75 7.275 3.75C8.87153 3.75 10.4181 4.50588 11.4261 5.70385L12 6.3859L12.5739 5.70385C13.5819 4.50588 15.1285 3.75 16.725 3.75C19.5363 3.75 21.75 5.97737 21.75 8.84469C21.75 10.6097 20.9724 12.2686 19.4556 14.1468C17.9301 16.0358 15.7342 18.0554 13.0158 20.555C13.0155 20.5552 13.0152 20.5555 13.0149 20.5558L12.0017 21.4822L10.9855 20.5466Z" fill="black" fill-opacity="0.3" stroke="white" stroke-width="1.5"></path></svg>
+                                    </button>
+                                </div>
+                                <div class="textbox">
+                                    <p class="shopname">탱커스</p>
+                                    <p class="coupon">쿠폰할인가</p>
+                                    <span class="dc-rate">72%</span>
+                                    <span class="price">24,960</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-item">
+                            <a href="javascript:void(0);" class="wrap-prod">
+                                <div class="thumb">
+                                    <img src="https://cf.product-image.s.zigzag.kr/original/d/2022/4/4/12934_202204041905110146_94082.jpeg?width=576&height=576&quality=80&format=webp" alt="">
+                                    <button class="like-btn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M10.9855 20.5466L10.9846 20.5458C8.26595 18.0507 6.06979 16.0333 4.54429 14.1455C3.02764 12.2686 2.25 10.6097 2.25 8.84469C2.25 5.97737 4.46367 3.75 7.275 3.75C8.87153 3.75 10.4181 4.50588 11.4261 5.70385L12 6.3859L12.5739 5.70385C13.5819 4.50588 15.1285 3.75 16.725 3.75C19.5363 3.75 21.75 5.97737 21.75 8.84469C21.75 10.6097 20.9724 12.2686 19.4556 14.1468C17.9301 16.0358 15.7342 18.0554 13.0158 20.555C13.0155 20.5552 13.0152 20.5555 13.0149 20.5558L12.0017 21.4822L10.9855 20.5466Z" fill="black" fill-opacity="0.3" stroke="white" stroke-width="1.5"></path></svg>
+                                    </button>
+                                </div>
+                                <div class="textbox">
+                                    <p class="shopname">무드무드</p>
+                                    <span class="dc-rate">77%</span>
+                                    <span class="price">32,900</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-item">
+                            <a href="javascript:void(0);" class="wrap-prod">
+                                <div class="thumb">
+                                    <img src="https://cf.product-image.s.zigzag.kr/original/d/2023/6/23/15129_202306231011460745_45889.jpeg?width=576&height=576&quality=80&format=webp" alt="">
+                                    <button class="like-btn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M10.9855 20.5466L10.9846 20.5458C8.26595 18.0507 6.06979 16.0333 4.54429 14.1455C3.02764 12.2686 2.25 10.6097 2.25 8.84469C2.25 5.97737 4.46367 3.75 7.275 3.75C8.87153 3.75 10.4181 4.50588 11.4261 5.70385L12 6.3859L12.5739 5.70385C13.5819 4.50588 15.1285 3.75 16.725 3.75C19.5363 3.75 21.75 5.97737 21.75 8.84469C21.75 10.6097 20.9724 12.2686 19.4556 14.1468C17.9301 16.0358 15.7342 18.0554 13.0158 20.555C13.0155 20.5552 13.0152 20.5555 13.0149 20.5558L12.0017 21.4822L10.9855 20.5466Z" fill="black" fill-opacity="0.3" stroke="white" stroke-width="1.5"></path></svg>
+                                    </button>
+                                </div>
+                                <div class="textbox">
+                                    <p class="shopname">허그모드</p>
+                                    <p class="coupon">쿠폰할인가</p>
+                                    <span class="dc-rate">71%</span>
+                                    <span class="price">20,610</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-item">
+                            <a href="javascript:void(0);" class="wrap-prod">
+                                <div class="thumb">
+                                    <img src="https://cf.product-image.s.zigzag.kr/original/d/2023/2/7/18648_202302070947020033_11143.jpeg?width=576&height=576&quality=80&format=webp" alt="">
+                                    <button class="like-btn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M10.9855 20.5466L10.9846 20.5458C8.26595 18.0507 6.06979 16.0333 4.54429 14.1455C3.02764 12.2686 2.25 10.6097 2.25 8.84469C2.25 5.97737 4.46367 3.75 7.275 3.75C8.87153 3.75 10.4181 4.50588 11.4261 5.70385L12 6.3859L12.5739 5.70385C13.5819 4.50588 15.1285 3.75 16.725 3.75C19.5363 3.75 21.75 5.97737 21.75 8.84469C21.75 10.6097 20.9724 12.2686 19.4556 14.1468C17.9301 16.0358 15.7342 18.0554 13.0158 20.555C13.0155 20.5552 13.0152 20.5555 13.0149 20.5558L12.0017 21.4822L10.9855 20.5466Z" fill="black" fill-opacity="0.3" stroke="white" stroke-width="1.5"></path></svg>
+                                    </button>
+                                </div>
+                                <div class="textbox">
+                                    <p class="shopname">샤트렌</p>
+                                    <p class="coupon">쿠폰할인가</p>
+                                    <span class="dc-rate">83%</span>
+                                    <span class="price">31,850</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-item">
+                            <a href="javascript:void(0);" class="wrap-prod">
+                                <div class="thumb">
+                                    <img src="https://cf.product-image.s.zigzag.kr/original/d/2023/5/16/16896_202305161748110781_14393.jpeg?width=576&height=576&quality=80&format=webp" alt="">
+                                    <button class="like-btn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M10.9855 20.5466L10.9846 20.5458C8.26595 18.0507 6.06979 16.0333 4.54429 14.1455C3.02764 12.2686 2.25 10.6097 2.25 8.84469C2.25 5.97737 4.46367 3.75 7.275 3.75C8.87153 3.75 10.4181 4.50588 11.4261 5.70385L12 6.3859L12.5739 5.70385C13.5819 4.50588 15.1285 3.75 16.725 3.75C19.5363 3.75 21.75 5.97737 21.75 8.84469C21.75 10.6097 20.9724 12.2686 19.4556 14.1468C17.9301 16.0358 15.7342 18.0554 13.0158 20.555C13.0155 20.5552 13.0152 20.5555 13.0149 20.5558L12.0017 21.4822L10.9855 20.5466Z" fill="black" fill-opacity="0.3" stroke="white" stroke-width="1.5"></path></svg>
+                                    </button>
+                                </div>
+                                <div class="textbox">
+                                    <p class="shopname">컬럼비아</p>
+                                    <span class="dc-rate">60%</span>
+                                    <span class="price">34,000</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-item">
+                            <a href="javascript:void(0);" class="wrap-prod">
+                                <div class="thumb">
+                                    <img src="https://cf.product-image.s.zigzag.kr/original/d/2023/5/24/14787_202305241306440647_61649.jpeg?width=576&height=576&quality=80&format=webp" alt="">
+                                    <button class="like-btn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M10.9855 20.5466L10.9846 20.5458C8.26595 18.0507 6.06979 16.0333 4.54429 14.1455C3.02764 12.2686 2.25 10.6097 2.25 8.84469C2.25 5.97737 4.46367 3.75 7.275 3.75C8.87153 3.75 10.4181 4.50588 11.4261 5.70385L12 6.3859L12.5739 5.70385C13.5819 4.50588 15.1285 3.75 16.725 3.75C19.5363 3.75 21.75 5.97737 21.75 8.84469C21.75 10.6097 20.9724 12.2686 19.4556 14.1468C17.9301 16.0358 15.7342 18.0554 13.0158 20.555C13.0155 20.5552 13.0152 20.5555 13.0149 20.5558L12.0017 21.4822L10.9855 20.5466Z" fill="black" fill-opacity="0.3" stroke="white" stroke-width="1.5"></path></svg>
+                                    </button>
+                                </div>
+                                <div class="textbox">
+                                    <p class="shopname">팍티오</p>
+                                    <span class="dc-rate">57%</span>
+                                    <span class="price">19,900</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-item">
+                            <a href="javascript:void(0);" class="wrap-prod">
+                                <div class="thumb">
+                                    <img src="https://cf.product-image.s.zigzag.kr/original/d/2022/11/24/18652_202211241643490005_25001.jpeg?width=576&height=576&quality=80&format=webp" alt="">
+                                    <button class="like-btn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M10.9855 20.5466L10.9846 20.5458C8.26595 18.0507 6.06979 16.0333 4.54429 14.1455C3.02764 12.2686 2.25 10.6097 2.25 8.84469C2.25 5.97737 4.46367 3.75 7.275 3.75C8.87153 3.75 10.4181 4.50588 11.4261 5.70385L12 6.3859L12.5739 5.70385C13.5819 4.50588 15.1285 3.75 16.725 3.75C19.5363 3.75 21.75 5.97737 21.75 8.84469C21.75 10.6097 20.9724 12.2686 19.4556 14.1468C17.9301 16.0358 15.7342 18.0554 13.0158 20.555C13.0155 20.5552 13.0152 20.5555 13.0149 20.5558L12.0017 21.4822L10.9855 20.5466Z" fill="black" fill-opacity="0.3" stroke="white" stroke-width="1.5"></path></svg>
+                                    </button>
+                                </div>
+                                <div class="textbox">
+                                    <p class="shopname">올리비아하슬러</p>
+                                    <p class="coupon">쿠폰할인가</p>
+                                    <span class="dc-rate">80%</span>
+                                    <span class="price">199,900</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-item">
+                            <a href="javascript:void(0);" class="wrap-prod">
+                                <div class="thumb">
+                                    <img src="https://cf.product-image.s.zigzag.kr/original/d/2023/5/15/26027_202305151114120091_80441.jpeg?width=576&height=576&quality=80&format=webp" alt="">
+                                    <button class="like-btn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M10.9855 20.5466L10.9846 20.5458C8.26595 18.0507 6.06979 16.0333 4.54429 14.1455C3.02764 12.2686 2.25 10.6097 2.25 8.84469C2.25 5.97737 4.46367 3.75 7.275 3.75C8.87153 3.75 10.4181 4.50588 11.4261 5.70385L12 6.3859L12.5739 5.70385C13.5819 4.50588 15.1285 3.75 16.725 3.75C19.5363 3.75 21.75 5.97737 21.75 8.84469C21.75 10.6097 20.9724 12.2686 19.4556 14.1468C17.9301 16.0358 15.7342 18.0554 13.0158 20.555C13.0155 20.5552 13.0152 20.5555 13.0149 20.5558L12.0017 21.4822L10.9855 20.5466Z" fill="black" fill-opacity="0.3" stroke="white" stroke-width="1.5"></path></svg>
+                                    </button>
+                                </div>
+                                <div class="textbox">
+                                    <p class="shopname">유니제이</p>
+                                    <p class="coupon">쿠폰할인가</p>
+                                    <span class="dc-rate">78%</span>
+                                    <span class="price">17,910</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="sc-time-sale">
+                <h2>놓치면 후회할 타임특가</h2>
+                <div class="timer-con">
+                    <div class="timer">
+                        <strong>22:55:33</strong><span>남았어요</span>
+                    </div>
+                    <a href="" class="more">더보기</a>
+                </div>
+                <a href="" class="salebanner">
+                    <div class="thumb">
+                        <img src="https://cf.product-image.s.zigzag.kr/original/d/2023/7/4/13114_202307041201000103_37711.jpeg?width=100&height=100&quality=80&format=webp" alt="">
+                    </div>
+                    <div class="textbox">
+                        <p>타임특가로 <em>10% 싸게</em> 구매했어요!</p>
+                        <div class="textbox-info">
+                            <p><b>쉬즈미스</b> [쉬즈미스] 러블리 벨티드 플라워 셔링 원피스</p>
+                            <span class="order-time">8분 전</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="product-container">
+                    <ul class="product-list">
+                        <li class="product-item">
+                            <div class="thumb">
+                                <img src="https://cf.product-image.s.zigzag.kr/original/d/2023/6/11/11579_202306110544250368_63996.jpeg?width=720&height=720&quality=80&format=webp" alt="">
+                                <button class="like-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M10.9855 20.5466L10.9846 20.5458C8.26595 18.0507 6.06979 16.0333 4.54429 14.1455C3.02764 12.2686 2.25 10.6097 2.25 8.84469C2.25 5.97737 4.46367 3.75 7.275 3.75C8.87153 3.75 10.4181 4.50588 11.4261 5.70385L12 6.3859L12.5739 5.70385C13.5819 4.50588 15.1285 3.75 16.725 3.75C19.5363 3.75 21.75 5.97737 21.75 8.84469C21.75 10.6097 20.9724 12.2686 19.4556 14.1468C17.9301 16.0358 15.7342 18.0554 13.0158 20.555C13.0155 20.5552 13.0152 20.5555 13.0149 20.5558L12.0017 21.4822L10.9855 20.5466Z" fill="black" fill-opacity="0.3" stroke="white" stroke-width="1.5"></path></svg>
+                                </button>
+                            </div>
+                            <div class="textbox">
+                                <p class="shopname">프롬리리컬</p>
+                                <p class="shop-title">[프롬리리컬] [단연트위드자켓1등] 멜로샤 반팔 트위드 여름 자켓 jk2623</p>
+                                <p class="coupon">쿠폰할인가</p>
+                                <span class="dc-rate">48%</span>
+                                <span class="price">26,100</span>
+                                <div class="review">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.99545 4.78691L13.3889 5.44291L10.2608 8.60532L11.045 13L6.94444 10.9749L2.84393 13L3.62811 8.60532L0.5 5.44291L4.89344 4.78691L6.94444 1L8.99545 4.78691Z" fill="#F5C244"></path><path d="M8.99545 4.78691L13.3889 5.44291L10.2608 8.60532L11.045 13L6.94444 10.9749L2.84393 13L3.62811 8.60532L0.5 5.44291L4.89344 4.78691L6.94444 1L8.99545 4.78691Z" fill="#F5C244"></path></svg>
+                                    <span class="review-rating">4.8</span>
+                                    <span class="review-count">(4)</span>
+                                </div>
+                                <div class="timesale-card">
+                                    타임특가
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-item">
+                            <div class="thumb">
+                                <img src="https://cf.product-image.s.zigzag.kr/original/d/2023/7/27/12364_202307271954070497_82865.jpeg?width=720&height=720&quality=80&format=webp" alt="">
+                                <button class="like-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M10.9855 20.5466L10.9846 20.5458C8.26595 18.0507 6.06979 16.0333 4.54429 14.1455C3.02764 12.2686 2.25 10.6097 2.25 8.84469C2.25 5.97737 4.46367 3.75 7.275 3.75C8.87153 3.75 10.4181 4.50588 11.4261 5.70385L12 6.3859L12.5739 5.70385C13.5819 4.50588 15.1285 3.75 16.725 3.75C19.5363 3.75 21.75 5.97737 21.75 8.84469C21.75 10.6097 20.9724 12.2686 19.4556 14.1468C17.9301 16.0358 15.7342 18.0554 13.0158 20.555C13.0155 20.5552 13.0152 20.5555 13.0149 20.5558L12.0017 21.4822L10.9855 20.5466Z" fill="black" fill-opacity="0.3" stroke="white" stroke-width="1.5"></path></svg>
+                                </button>
+                            </div>
+                            <div class="textbox">
+                                <p class="shopname">디즈니골프</p>
+                                <p class="shop-title">[디즈니골프] 남성 뒤포인트 카라 티셔츠 DK2MTS042</p>
+                                <p class="coupon">쿠폰할인가</p>
+                                <span class="dc-rate">89%</span>
+                                <span class="price">20,240</span>
+                                <div class="review">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.99545 4.78691L13.3889 5.44291L10.2608 8.60532L11.045 13L6.94444 10.9749L2.84393 13L3.62811 8.60532L0.5 5.44291L4.89344 4.78691L6.94444 1L8.99545 4.78691Z" fill="#F5C244"></path><path d="M8.99545 4.78691L13.3889 5.44291L10.2608 8.60532L11.045 13L6.94444 10.9749L2.84393 13L3.62811 8.60532L0.5 5.44291L4.89344 4.78691L6.94444 1L8.99545 4.78691Z" fill="#F5C244"></path></svg>
+                                    <span class="review-rating">5.0</span>
+                                    <span class="review-count">(1)</span>
+                                </div>
+                                <div class="timesale-card">
+                                    타임특가
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-item">
+                            <div class="thumb">
+                                <img src="https://cf.product-image.s.zigzag.kr/original/d/2023/7/27/15265_202307271953530552_69667.jpeg?width=720&height=720&quality=80&format=webp" alt="">
+                                <button class="like-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M10.9855 20.5466L10.9846 20.5458C8.26595 18.0507 6.06979 16.0333 4.54429 14.1455C3.02764 12.2686 2.25 10.6097 2.25 8.84469C2.25 5.97737 4.46367 3.75 7.275 3.75C8.87153 3.75 10.4181 4.50588 11.4261 5.70385L12 6.3859L12.5739 5.70385C13.5819 4.50588 15.1285 3.75 16.725 3.75C19.5363 3.75 21.75 5.97737 21.75 8.84469C21.75 10.6097 20.9724 12.2686 19.4556 14.1468C17.9301 16.0358 15.7342 18.0554 13.0158 20.555C13.0155 20.5552 13.0152 20.5555 13.0149 20.5558L12.0017 21.4822L10.9855 20.5466Z" fill="black" fill-opacity="0.3" stroke="white" stroke-width="1.5"></path></svg>
+                                </button>
+                            </div>
+                            <div class="textbox">
+                                <p class="shopname">에스콰이아</p>
+                                <p class="shop-title">에스콰이아 여성 피셔맨 샌들 CMSD901_902</p>
+                                <p class="coupon">쿠폰할인가</p>
+                                <span class="dc-rate">77%</span>
+                                <span class="price">35,940</span>
+                                <div class="review">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.99545 4.78691L13.3889 5.44291L10.2608 8.60532L11.045 13L6.94444 10.9749L2.84393 13L3.62811 8.60532L0.5 5.44291L4.89344 4.78691L6.94444 1L8.99545 4.78691Z" fill="#F5C244"></path><path d="M8.99545 4.78691L13.3889 5.44291L10.2608 8.60532L11.045 13L6.94444 10.9749L2.84393 13L3.62811 8.60532L0.5 5.44291L4.89344 4.78691L6.94444 1L8.99545 4.78691Z" fill="#F5C244"></path></svg>
+                                    <span class="review-rating">5.0</span>
+                                    <span class="review-count">(6)</span>
+                                </div>
+                                <div class="timesale-card">
+                                    타임특가
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div> 
+                <a href="" class="viewmore">더보기</a>
+            </section>
+            <section class="sc-mans-summer">
+                <div class="mans-sale-banner">
+                    <a href="" class="mans-banner-container">
+                        <!-- https://cf.zibet.s.zigzag.kr/zibet-page-section/00095/9574-xc5umw4vleg -->
+                        <h3>맨즈 썸머 컬렉션<br>헤지스맨/닥스셔츠 외</h3>
+                        <span>인기브랜드 단하루 파격특가</span>
+                    </a>
+                </div>
+                <div class="mans-product-banner">
+                    <ul class="mans-product-list">
+                        <li class="mans-product-item">
+                            <a href="" class="prod-item">
+                                <div class="thumb">
+                                    <img src="https://cf.product-image.s.zigzag.kr/original/d/2023/6/21/16725_202306210950440196_32823.jpeg?width=300&height=300&quality=80&format=webp" alt="">
+                                </div>
+                                <div class="textbox">
+                                    <p class="shopname">라이프로그</p>
+                                    <p class="shop-title">온라인단독&#41;	남성 가슴 삼각형 프린트 반팔 카라 티셔츠 MSTSM488_BL</p>
+                                    <span class="dc-rate">87%</span>
+                                    <span class="price">22,500원</span>
+                                    <span class="coupon">쿠폰할인가</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mans-product-item">
+                            <a href="" class="prod-item">
+                                <div class="thumb">
+                                    <img src="https://cf.product-image.s.zigzag.kr/original/d/2023/5/23/29210_202305231052210045_68371.jpeg?width=300&height=300&quality=80&format=webp" alt="">
+                                </div>
+                                <div class="textbox">
+                                    <p class="shopname">지오지아</p>
+                                    <p class="shop-title">7부 린넨 블랜드 캐주얼 셔츠 B (ABB2WC1172_B)</p>
+                                    <span class="dc-rate">81%</span>
+                                    <span class="price">13,410원</span>
+                                    <span class="coupon">쿠폰할인가</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mans-product-item">
+                            <a href="" class="prod-item">
+                                <div class="thumb">
+                                    <img src="https://cf.product-image.s.zigzag.kr/original/d/2022/8/6/15445_202208060455420279_92671.jpeg?width=300&height=300&quality=80&format=webp" alt="">
+                                </div>
+                                <div class="textbox">
+                                    <p class="shopname">인디안</p>
+                                    <p class="shop-title">[INDIAN] 멀티 패턴 에리형 티셔츠_MITASXM3211</p>
+                                    <span class="dc-rate">83%</span>
+                                    <span class="price">23,470원</span>
+                                    <span class="coupon">쿠폰할인가</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mans-product-item view-all">
+                            <a href="" class="view-all">
+                                <div class="plus-icon">
+                                    <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg" name="plus-icon-large-gray"><path fill="#ADB5BD" d="M8 0h2v18H8z"></path><path fill="#ADB5BD" d="M18 8v2H0V8z"></path></svg>
+                                </div>
+                                <div class="view-all-text">
+                                     전체보기
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+            <section class="sc-summer-clearance">
+                <div class="clearance-sale-banner">
+                    <a href="" class="clearance-banner-container">
+                        <img src="https://s3.ap-northeast-2.amazonaws.com/res.s.zigzag.kr/benefit_banner/20230721/d95cc252-e186-4c85-b47f-8674b5ca6759.jpg" alt="">
+                        <div class="textbox">
+                            <h3>헤레이스 여름 클리어런스</h3>
+                            <p>최대 85% 할인 / 7.24 ~ 7.27</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-slider swiper-container">
+                    <ul class="slider-list swiper-wrapper">
+                        <li class="slider-item swiper-slide">
+                            <div class="thumb">
+                                <img src="https://cf.product-image.s.zigzag.kr/original/d/2023/5/12/14001_202305121940220924_42022.jpeg?width=1080&height=1080&quality=80&format=webp" alt="">
+                            </div>
+                            <p class="coupon">쿠폰할인가</p>
+                            <span class="dc-rate">66%</span>
+                            <span class="price">71,290원</span>
+                        </li>
+                        <li class="slider-item swiper-slide">
+                            <div class="thumb">
+                                <img src="https://cf.product-image.s.zigzag.kr/original/d/2023/7/18/14001_202307181833160639_99871.jpeg?width=1080&height=1080&quality=80&format=webp" alt="">
+                            </div>
+                            <p class="coupon">쿠폰할인가</p>
+                            <span class="dc-rate">66%</span>
+                            <span class="price">56,350원</span>
+                        </li>
+                        <li class="slider-item swiper-slide">
+                            <div class="thumb">
+                                <img src="https://cf.product-image.s.zigzag.kr/original/d/2022/4/27/14001_202204271530170636_13135.jpeg?width=1080&height=1080&quality=80&format=webp" alt="">
+                            </div>
+                            <p class="coupon">쿠폰할인가</p>
+                            <span class="dc-rate">85%</span>
+                            <span class="price">39,900원</span>
+                        </li>
+                        <li class="slider-item swiper-slide">
+                            <div class="thumb">
+                                <img src="https://cf.product-image.s.zigzag.kr/original/d/2023/3/29/14001_202303290951010414_35389.jpeg?width=1080&height=1080&quality=80&format=webp" alt="">
+                            </div>
+                            <span class="dc-rate">59%</span>
+                            <span class="price">39,800원</span>
+                        </li>
+                        <li class="slider-item swiper-slide">
+                            <div class="thumb">
+                                <img src="https://cf.product-image.s.zigzag.kr/original/d/2023/4/3/14001_202304030928330336_48658.jpeg?width=1080&height=1080&quality=80&format=webp" alt="">
+                            </div>
+                            <p class="coupon">쿠폰할인가</p>
+                            <span class="dc-rate">67%</span>
+                            <span class="price">45,560원</span>
+                        </li>
+                        <li class="slider-more swiper-slide">
+                            <a href="" class="plus-icon">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="35" height="35" rx="11.5" fill="white" stroke="#E9ECEF"></rect><rect x="17.1665" y="10.5" width="1.66667" height="15" fill="#495057"></rect><rect x="25.5" y="17.1667" width="1.66667" height="15" transform="rotate(90 25.5 17.1667)" fill="#495057"></rect></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="sc-recommend-product">
+                <h2>카테고리별 추천 상품</h2>
+                <nav class="recommend-nav swiper-container">
+                    <ul class="category-list swiper-wrapper">
+                        <li class="category-item swiper-slide" data-cate="1001">
+                            <a href="javascript:void(0);">전체</a>
+                        </li>
+                        <li class="category-item swiper-slide" data-cate="1002">
+                            <a href="javascript:void(0);">원피스</a>
+                        </li>
+                        <li class="category-item swiper-slide" data-cate="1003">
+                            <a href="javascript:void(0);">상의</a>
+                        </li>
+                        <li class="category-item swiper-slide" data-cate="1004">
+                            <a href="javascript:void(0);">슈즈</a>
+                        </li>
+                        <li class="category-item swiper-slide" data-cate="1005">
+                            <a href="javascript:void(0);">골프</a>
+                        </li>
+                        <li class="category-item swiper-slide" data-cate="1006">
+                            <a href="javascript:void(0);">아우터</a>
+                        </li>
+                        <li class="category-item swiper-slide" data-cate="1007">
+                            <a href="javascript:void(0);">가방/지갑</a>
+                        </li>
+                        <li class="category-item swiper-slide" data-cate="1008">
+                            <a href="javascript:void(0);">아웃도어</a>
+                        </li>
+                        <li class="category-item swiper-slide" data-cate="1009">
+                            <a href="javascript:void(0);">바지</a>
+                        </li>
+                        <li class="category-item swiper-slide" data-cate="1010">
+                            <a href="javascript:void(0);">스커트</a>
+                        </li>
+                        <li class="category-item swiper-slide" data-cate="1011">
+                            <a href="javascript:void(0);">이너웨어</a>
+                        </li>
+                        <li class="category-item swiper-slide" data-cate="1012">
+                            <a href="javascript:void(0);">스포츠</a>
+                        </li>
+                    </ul>
+                    <div class="control-arrow">
+                        <button class="prev">
+                            <svg width="16" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.49989 1.93945L0.439227 3.00011L5.43889 8.00011L0.439227 13.0001L1.49989 14.0608L7.56055 8.00011L1.49989 1.93945Z" fill="#ADB5BD"></path></svg>
+                        </button>
+                        <button class="next">
+                            <svg width="16" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.49989 1.93945L0.439227 3.00011L5.43889 8.00011L0.439227 13.0001L1.49989 14.0608L7.56055 8.00011L1.49989 1.93945Z" fill="#ADB5BD"></path></svg>
+                        </button>
+                    </div>
+                </nav>
+                <div class="recommend-product">
+
+
+                    <ul class="product-list" id="cateList">
+
+                    </ul>
+
+
+                    <a href="" class="prod-more">
+                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" name="refresh-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.454 4.046 10.5 5h3V2l-.983.984A6.75 6.75 0 1 0 14.75 8h-1.5a5.25 5.25 0 1 1-1.796-3.954Z" fill="currentColor"></path></svg>
+                        <p>상품 더보기</p>
+                        <span><strong>1</strong>/5</span>
+                    </a>
+                </div>
+            </section>
+            <section class="sc-slider-banner swiper-container">
+                <ul class="slider-banner-list swiper-wrapper">
+                    <li class="slider-banner-item swiper-slide">
+                        <a href="">
+                            <img src="https://cf.res.s.zigzag.kr/benefit_banner/20230320/b7119402-7a05-4254-aa1a-355c956f1d18.jpg" alt="">
+                        </a>
+                    </li>
+                    <li class="slider-banner-item swiper-slide">
+                        <a href="">
+                            <img src="https://cf.res.s.zigzag.kr/benefit_banner/20230727/2906c608-6b17-437c-b2fe-a3148765eba5.jpg" alt="">
+                        </a>
+                    </li>
+                    <li class="slider-banner-item swiper-slide">
+                        <a href="">
+                            <img src="https://cf.res.s.zigzag.kr/benefit_banner/20230727/13d9ca84-eb7f-44bc-bbf8-344993e155bb.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <a href="#" class="top-btn">
+                <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg" name="gototop-icon"><circle cx="20" cy="20" r="19.5" fill="#fff" fill-opacity="0.9" stroke="#F1F3F5"></circle><path d="M20.833 27.5V15.692l5.492 5.491L27.5 20 20 12.5 12.5 20l1.175 1.175 5.492-5.483V27.5h1.666Z" fill="#495057"></path></svg>
+            </a>
+        </main>
+        <footer>
+            <div class="kakaostyle">
+                <button class="kakao-info">
+                    <h2>(주)카카오스타일 사업자정보</h2>
+                    <svg width="16" height="8" fill="none" xmlns="http://www.w3.org/2000/svg" name="chevron-down-icon-medium" class="CompanyInfo_icon__rRTBL"><path d="M14.061 1.5 13.001.44l-5 5-5-5L1.94 1.5 8 7.562l6.061-6.06Z" fill="currentColor"></path></svg>
+                </button>
+                <p class="kakao-sub">
+                    대표: 서정훈 <br>
+                    주소: 서울시 강남구 테헤란로 521, 27층 (삼성동, 파르나스타워) <br>
+                    사업자등록번호: 214-88-91525 [사업자 정보 조회]
+                    통신판매업 신고: 서울-강남-03345 <br>
+                    호스팅서비스사업자: (주)카카오스타일 <br>
+                    이메일: support@posty.kr <br>
+                    고객센터: 1670-8052 <br>
+                </p>
+            </div>
+            <div class="private-info">
+                <h2><b>개인정보처리방침</b> · 이용약관</h2>
+                <p>(주)카카오스타일은 통신판매중개자로서 통신판매의 당사자가 아닙니다. 따라서, 등록된 상품, 거래정보 및 거래에 대하여 (주)카카오스타일은 어떠한 책임도 지지 않습니다.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

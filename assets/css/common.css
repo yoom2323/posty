@@ -1,0 +1,27 @@
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+.hidden{
+    /* overflow: hidden; */
+    background: #ddd;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 1025px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.swiper{}
+.swiper-button-disabled{display: none;}
+/* 
+.swiper 
+ .swiper-wrapper    
+    .swiper-sldie */
