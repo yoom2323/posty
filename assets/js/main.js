@@ -13,6 +13,11 @@ mainSlide = new Swiper('.group-slide .swiper',{
 
 })
 
+//상단 카테고리 클릭이벤트
+$('.top-tab-list .top-tab-item').click(function(){
+    $(this).addClass('on').siblings().removeClass('on');
+})
+
 // 여름 클리어런스 스와이퍼
 summerSlide = new Swiper('.product-slider',{
     simulateTouch:true,

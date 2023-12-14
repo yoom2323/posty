@@ -80,8 +80,8 @@
 
 }
 .group-slide .swiper{
-    width: 480px;
-    height: 480px;
+    max-width: 480px;
+    max-height: 480px;
     position: relative;
 }
 .group-slide .swiper .swiper-wrapper{
