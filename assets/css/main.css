@@ -591,6 +591,11 @@
     color: #fff;
     white-space: nowrap;
 }
+@media screen and (max-width:500px) {
+    .clearance-sale-banner .clearance-banner-container .textbox {
+        width: 310px;
+    }
+}
 
 .clearance-sale-banner .clearance-banner-container .textbox h3{
     font-size: 26px;
