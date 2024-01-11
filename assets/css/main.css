@@ -589,7 +589,7 @@
     padding: 24px;
     z-index: 99;
     color: #fff;
-    min-width: 300px;
+    white-space: nowrap;
 }
 
 .clearance-sale-banner .clearance-banner-container .textbox h3{
