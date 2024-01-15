@@ -351,8 +351,7 @@ h2{
 }
 .view-more {
     display: block;
-    margin: 0 auto;
-    width: 448px;
+    margin: 24px 16px;
     height: 48px;
     display: flex;
     justify-content: center;
