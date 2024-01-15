@@ -21,7 +21,26 @@ $('.top-tab-list .top-tab-item').click(function(){
 // 여름 클리어런스 스와이퍼
 summerSlide = new Swiper('.product-slider',{
     simulateTouch:true,
-    slidesPerView: 2.8,
+    slidesPerView: 2.2,
+    breakpoints: {
+        
+        500: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        650: {
+          slidesPerView: 4, 
+          spaceBetween: 40,
+        },
+        900: {
+          slidesPerView: 5,
+          spaceBetween: 40,
+        },
+        1000: {
+          slidesPerView: 6,
+          spaceBetween: 40,
+        },
+      },
 })
 
 // 추천 상품 카테고리 클릭이벤트
