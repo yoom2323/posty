@@ -4,6 +4,7 @@ footer {
 .gnb {
     display: none;
 }
+
 .brand .header-wrap {
     display: flex;
     flex-direction: row-reverse;
@@ -32,14 +33,14 @@ footer {
     left: 0;
     padding: 20px 0 36px;
     overflow: hidden;
-    max-width: 1025px;
+    max-width: 1000px;
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
 }
 .sc-brand-category .brand-swiper{
+    overflow: hidden;
 }
-.sc-brand-category .brand-swiper{}
 .sc-brand-category .brand-list{
     margin: 0 16px;
 }
